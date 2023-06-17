@@ -24,3 +24,13 @@ def check_palindrom(str):
     return str == str[::-1]
 
 print(check_palindrom('aba'))
+
+
+#3 способ
+def check_palindrom(str):
+    for a in range(len(str)):
+        if str[a] != str[-a - 1]:
+            return False
+
+    return True
+print(check_palindrom('abba'))
