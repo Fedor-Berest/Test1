@@ -15,6 +15,12 @@
 def check_palindrom(str):
     return str == ''.join(reversed(str))
 
+
 print(check_palindrom('aboba'))
 
 
+#2 способ может быть так тоже нельзя
+def check_palindrom(str):
+    return str == str[::-1]
+
+print(check_palindrom('aba'))
