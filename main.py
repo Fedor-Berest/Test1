@@ -34,3 +34,5 @@ def check_palindrom(str):
 
     return True
 print(check_palindrom('abba'))
+
+print('aaa')
